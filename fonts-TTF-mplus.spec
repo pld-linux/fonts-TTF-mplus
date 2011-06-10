@@ -1,11 +1,11 @@
 Summary:	M+ fonts
 Name:		fonts-TTF-mplus
-Version:	033
+Version:	039
 Release:	0.TESTFLIGHT.1
 License:	mplus (distributable)
 Group:		Fonts
 Source0:	http://dl.sourceforge.jp/mplus-fonts/6650/mplus-TESTFLIGHT-%{version}.tar.gz
-# Source0-md5:	7945409be4305e6b1d40da67a5422790
+# Source0-md5:	02910588602af51dd6d23350943332b9
 URL:		http://mplus-fonts.sourceforge.jp/mplus-outline-fonts/index-en.html
 Requires(post,postun):	fontpostinst
 Requires:	%{_fontsdir}/TTF
@@ -15,7 +15,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		_ttffontsdir	%{_fontsdir}/TTF
 
 %description
-M+ fonts
+M+ fonts.
 
 %prep
 %setup -q -n mplus-TESTFLIGHT-%{version}
