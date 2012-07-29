@@ -1,4 +1,5 @@
-Summary:	M+ fonts
+Summary:	M+ fonts (Latin and Japanese)
+Summary(pl.UTF-8):	Fonty M+ (łacińskie i japońskie)
 Name:		fonts-TTF-mplus
 Version:	050
 Release:	0.TESTFLIGHT.1
@@ -17,7 +18,17 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		_ttffontsdir	%{_fontsdir}/TTF
 
 %description
-M+ fonts.
+M+ fonts: proportional Latin (4 variations), fixed-halfwidth Latin (3
+variations), fixed-fullwidth Japanese (2 Kana variations). 7 weights
+from Thin to Black are included, but fixed-halfwidth Latin with 5
+weights from Thin to Bold.
+
+%description -l pl.UTF-8
+Fonty M+: łacińskie proporcjonalne (4 warianty), łacińskie o stałej
+szerokości połówkowej (3 warianty), japońskie o stałej pełnej
+szerokości (2 warianty Kana). Dostępne jest 7 grubości fontów, z
+wyjątkiem łacińskich o stałej szerokości połówkowej, których jest 5
+grubości.
 
 %prep
 %setup -q -n mplus-TESTFLIGHT-%{version}
@@ -39,5 +50,6 @@ fontpostinst TTF
 
 %files
 %defattr(644,root,root,755)
-%doc README_E README_J LICENSE_E LICENSE_J
+%doc README_E LICENSE_E
+%lang(ja) %doc README_J LICENSE_J
 %{_ttffontsdir}/mplus-*.ttf
