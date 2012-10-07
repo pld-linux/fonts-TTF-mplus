@@ -2,7 +2,7 @@ Summary:	M+ fonts (Latin and Japanese)
 Summary(pl.UTF-8):	Fonty M+ (łacińskie i japońskie)
 Name:		fonts-TTF-mplus
 Version:	050
-Release:	0.TESTFLIGHT.1
+Release:	0.TESTFLIGHT.2
 License:	mplus (distributable)
 Group:		Fonts
 Source0:	http://dl.sourceforge.jp/mplus-fonts/6650/mplus-TESTFLIGHT-%{version}.tar.xz
@@ -36,8 +36,7 @@ grubości.
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_ttffontsdir}
-
-cp -a *.ttf $RPM_BUILD_ROOT%{_ttffontsdir}
+cp -p *.ttf $RPM_BUILD_ROOT%{_ttffontsdir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
