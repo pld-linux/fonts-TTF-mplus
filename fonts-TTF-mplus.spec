@@ -1,13 +1,13 @@
 Summary:	M+ fonts (Latin and Japanese)
 Summary(pl.UTF-8):	Fonty M+ (łacińskie i japońskie)
 Name:		fonts-TTF-mplus
-Version:	054
+Version:	056
 Release:	0.TESTFLIGHT.1
 License:	mplus (distributable)
 Group:		Fonts
 #Source0Download: http://sourceforge.jp/projects/mplus-fonts/releases/
 Source0:	http://dl.sourceforge.jp/mplus-fonts/6650/mplus-TESTFLIGHT-%{version}.tar.xz
-# Source0-md5:	850cf42971c5bde650aa2495ddb77d35
+# Source0-md5:	1ad9f99b52122d0239b55aac4c194881
 URL:		http://mplus-fonts.sourceforge.jp/mplus-outline-fonts/index-en.html
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	xz
